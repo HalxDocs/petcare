@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetGuard Pro - Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (same as your main page) -->
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-paw"></i></div>
+                <div class="logo-text">Pet<span>Guard</span> Pro</div>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="products-header">
+            <h1>Our Complete Product Line</h1>
+            <p>Discover our full range of veterinarian-approved pet care solutions</p>
+            
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Filter by:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Products</option>
+                        <option value="dog">Dog Care</option>
+                        <option value="cat">Cat Care</option>
+                        <option value="horse">Equine Care</option>
+                        <option value="disinfectant">Disinfectants</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="products-grid">
+           
+            <div class="product-card" data-category="dog">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-image">
+                    <img src="canine.avif" alt="Canine Clean & Protect" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Dog Care</span>
+                    <h3 class="product-title">Canine Clean & Protect</h3>
+                    <p class="product-description">Advanced formula shampoo with antifungal and antibacterial properties for dogs of all breeds.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$24.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Continue with 29 more products -->
+            <!-- Make sure to set proper data-category attributes -->
+            <!-- Example for a cat product: -->
+            <div class="product-card" data-category="cat">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1143&q=80" alt="Feline Fresh & Safe" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Cat Care</span>
+                    <h3 class="product-title">Feline Fresh & Safe</h3>
+                    <p class="product-description">Gentle pH-balanced formula that eliminates odors and pathogens while conditioning the coat.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$22.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="dog">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-image">
+                    <img src="canine.avif" alt="Canine Clean & Protect" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Dog Care</span>
+                    <h3 class="product-title">Canine Clean & Protect</h3>
+                    <p class="product-description">Advanced formula shampoo with antifungal and antibacterial properties for dogs of all breeds and coat types.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$24.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cat">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1143&q=80" alt="Feline Fresh & Safe" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Cat Care</span>
+                    <h3 class="product-title">Feline Fresh & Safe</h3>
+                    <p class="product-description">Gentle, tear-free formula that cleans while protecting your cat's sensitive skin and coat.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$22.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="horse">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80" alt="Equine Elite Shield" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Horse Care</span>
+                    <h3 class="product-title">Equine Elite Shield</h3>
+                    <p class="product-description">Professional-grade shampoo that enhances coat shine while providing UV protection.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$39.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="disinfectant">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Environment Protector" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Disinfectant</span>
+                    <h3 class="product-title">Environment Protector</h3>
+                    <p class="product-description">Vet-approved disinfectant for kennels, cages, and living areas. Kills 99.9% of germs.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$19.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="dog">
+                <div class="product-badge">Limited</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Puppy Gentle Wash" loading="lazy">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Dog Care</span>
+                    <h3 class="product-title">Puppy Gentle Wash</h3>
+                    <p class="product-description">Extra mild formula specially designed for puppies under 6 months with sensitive skin.</p>
+                    <div class="product-footer">
+                        <div class="product-price">$26.99</div>
+                        <a href="product-detail.html" class="product-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="pagination">
+            <button class="page-button active">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+            <button class="page-button next">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon"><i class="fas fa-paw"></i></div>
+                    <div class="footer-logo-text">Pet<span>Guard</span> Pro</div>
+                </div>
+                <p>Premium animal care products developed by veterinarians to ensure the health and happiness of your pets.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Dog Care</a></li>
+                    <li><a href="#">Cat Care</a></li>
+                    <li><a href="#">Horse Care</a></li>
+                    <li><a href="#">Livestock</a></li>
+                    <li><a href="#">Disinfectants</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 13/32 adebayo street </p>
+                <p><i class="fas fa-phone-alt"></i> +234 7025368658</p>
+                <p><i class="fas fa-envelope"></i> info@petguardpro.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM EST</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 PetGuard Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
